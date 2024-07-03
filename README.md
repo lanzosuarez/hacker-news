@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hacker News Stories
+
+This project displays the top 10 Hacker News stories, sorted by score in ascending order. It's built using Next.js 14 with TypeScript.
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/yourusername/hacker-news-stories.git
+cd hacker-news-stories
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Fetches and displays top 10 Hacker News stories
+- Sorts stories by score in ascending order
+- Responsive design
+- Uses SASS for styling
+- Implements accessibility considerations
+- Optimized for SEO
+- Includes loading experience
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js 14
+- TypeScript
+- SASS
+- date-fns for date formatting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Original Code vs Boilerplate
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+All code in `src/app/page.tsx`, `src/app/page.module.scss`, and `src/styles/globals.scss` is original. The project structure and configuration files were generated using `create-next-app`.
 
-## Deploy on Vercel
+## Testing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run the tests:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npm test
+```
+
+## Performance
+
+This project aims to achieve good web performance metrics. To check the performance, you can use tools like Lighthouse in Chrome DevTools.
+
+## Accessibility
+
+The project follows WCAG 2.1 guidelines for accessibility. Key considerations include:
+
+- Semantic HTML structure
+- Proper use of ARIA attributes where necessary
+- Keyboard navigation support
+- Color contrast ratios
+
+## SEO
+
+SEO optimizations include:
+
+- Use of metadata in `layout.tsx`
+- Semantic HTML structure
+- Responsive design for mobile-friendliness
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
